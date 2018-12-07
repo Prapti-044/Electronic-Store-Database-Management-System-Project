@@ -1,0 +1,23 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Mon May 14 08:23:32 2018
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> connect r1507044;
+Enter password:
+Connected.
+SQL> conn sys/sys as sysdba;
+Connected.
+SQL> grant execute on UTL_FILE to public;
+
+Grant succeeded.
+
+SQL> create or replace directory DATABASE as 'C:\Users\User\Desktop\file_lab';
+
+Directory created.
+
+SQL> grant read, write on directory DATABASE to public;
+
+Grant succeeded.
+
+SQL>
