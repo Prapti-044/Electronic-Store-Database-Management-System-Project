@@ -1,17 +1,34 @@
 # Electronic-Store-Database-Management-System-Project
-A database management system project done for Database Laboratory of 3rd year, 1st term
+A database management system project on Electronic Store was done for Database Laboratory in 3rd year, 1st term
 
 ## Introduction
 
 A database management system (DBMS) is system software for creating and managing databases. The DBMS provides users and programmers with a systematic way to create, retrieve, update and manage data.
 
+
+![main](https://user-images.githubusercontent.com/31363580/52048671-2e05a000-2576-11e9-8a86-4ac88a33c7fb.png)
+
+
+
 ## Learnt About
 
-PL
+PL Queries
 
-SQL
+SQL Queries
 
 File system
+
+```
+create table electronics(
+    d_id number,
+    typee varchar(20),
+    modell varchar(20),
+    colour varchar(20),
+    available number default 0 check (available >= 0),
+    price number,
+    primary key(d_id)
+);
+```
 
 ## Getting Started
 
